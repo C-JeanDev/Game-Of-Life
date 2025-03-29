@@ -26,7 +26,7 @@ Cell create_cell(int x, int y, int size){
 void draw_cell(Cell cell){
 	
 	if (cell->alive){
-		DrawRectangle(cell->x * cell->size, cell->y * cell->size, cell->size,cell->size,WHITE);
+		DrawRectangle(cell->y * cell->size, cell->x * cell->size, cell->size,cell->size,WHITE);
 	}
 
 }
@@ -42,3 +42,4 @@ void kill_cell(Cell cell){
 void rise_cell(Cell cell){
 	cell->alive = 1;
 }
+
