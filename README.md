@@ -54,11 +54,15 @@ The Game of Life is a **zero-player game** where the evolution of a grid of cell
 - **Up/Down Arrows** → Increase/Decrease simulation speed  
 - **ESC** → Exit the game  
 
-## 📸 Screenshots
+## 📸 Screenshots And Videos
 
-![Screenshot from 2025-03-30 00-58-14](https://github.com/user-attachments/assets/0a2e8303-4f17-43b3-adbc-4f47d31ac971)
-![Screenshot from 2025-03-30 01-00-16](https://github.com/user-attachments/assets/d7db886f-9588-41bd-beb3-dde88ed1d25f)
-![Screenshot from 2025-03-30 01-00-45](https://github.com/user-attachments/assets/4a0168d7-c736-4ccc-9c43-5aadafe64698)
+### Random Start
+![random_gameoflife](https://github.com/user-attachments/assets/59db4a2f-6196-49e2-b3ac-603d246b556a)
+### A single Gosper's glider gun creating gliders
+![random_gameoflife](https://github.com/user-attachments/assets/ac3b0766-10a6-48b7-b9b3-b06e1790e648)
+![Screenshot from 2025-03-30 20-01-43](https://github.com/user-attachments/assets/9e9397a2-4b20-46ec-96b5-a52c615ee7f7)
+![Screenshot from 2025-03-30 20-02-00](https://github.com/user-attachments/assets/9db89488-51a9-47e5-b34d-2f19f9cebeb4)
+
 
 
 ## 📄 License
