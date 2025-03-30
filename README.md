@@ -49,12 +49,13 @@ The Game of Life is a **zero-player game** where the evolution of a grid of cell
 
 - **SPACE** → Pause/Resume simulation   
 - **C** → Clear grid  
-- **R** -> Randomize Grid  (Will soon be implemented)
-- **Left Click** → Toggle individual cell state   (Will soon be implemented)
+- **R** -> Randomize Grid  
+- **Left Click** → Toggle individual cell state 
 - **Up/Down Arrows** → Increase/Decrease simulation speed  
 - **ESC** → Exit the game  
 
 ## 📸 Screenshots
+
 ![Screenshot from 2025-03-30 00-58-14](https://github.com/user-attachments/assets/0a2e8303-4f17-43b3-adbc-4f47d31ac971)
 ![Screenshot from 2025-03-30 01-00-16](https://github.com/user-attachments/assets/d7db886f-9588-41bd-beb3-dde88ed1d25f)
 ![Screenshot from 2025-03-30 01-00-45](https://github.com/user-attachments/assets/4a0168d7-c736-4ccc-9c43-5aadafe64698)

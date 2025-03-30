@@ -1,4 +1,5 @@
 #include <raylib.h>
+#include <stdlib.h>
 
 #include "grid.h"
 
@@ -120,5 +121,30 @@ void clear_grid(Grid *grid, Cell cells[][grid->columns]){
 	}	
 }
 
+void randomize_grid(Grid *grid, Cell cells[][grid->columns]){
+	
+	clear_grid(grid,cells);
 
-// randomize initial state;
+	for(int i = 1; i< grid->rows-1; i++){
+		for (int j = 1; j<grid->columns-1;j++){
+			int spawn_rate = random() % 100;
+
+			if (spawn_rate > 50)
+				rise_cell(cells[i][j]);
+
+		}
+	}
+		
+}
+
+void click_to(Grid * grid, Cell cells[][grid->columns]){
+
+	if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON)){
+		int row = GetMousePosition().y / grid->cell_size;
+		int column = GetMousePosition().x / grid->cell_size;
+		if (!is_alive(cells[row][column]))
+			rise_cell(cells[row][column]);
+		else kill_cell(cells[row][column]);
+	}
+
+}
