@@ -10,6 +10,7 @@ typedef struct grid {
 }Grid;
 
 void draw_grid(Grid * grid);
+void clear_grid(Grid *grid, Cell cells[][grid->columns]);
 void count_alive_cells(Grid * grid, Cell cells[][grid->columns],int * population);
 void draw_cells(Grid *grid, Cell cells[][grid->columns]);
 void update_cells(Grid *grid,Cell cells[][grid->columns]);

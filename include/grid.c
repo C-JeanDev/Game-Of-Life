@@ -102,11 +102,23 @@ void count_alive_cells(Grid * grid, Cell cells[][grid->columns],int * population
 	
 	*population = 0;
 
-	for (int i = 1; i < grid->rows; i++){
-		for (int j = 1; j< grid->columns; j++){
+	for (int i = 0; i < grid->rows; i++){
+		for (int j = 0; j< grid->columns; j++){
 			if (is_alive(cells[i][j])){
 				(*population)++;
 			}
 		}
 	}
 }
+
+
+void clear_grid(Grid *grid, Cell cells[][grid->columns]){
+	for (int i = 0; i < grid->rows;i++){
+		for (int j = 0; j < grid->columns;j++){
+			kill_cell(cells[i][j]);
+		}
+	}	
+}
+
+
+// randomize initial state;

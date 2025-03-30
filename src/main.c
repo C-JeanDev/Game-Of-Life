@@ -11,11 +11,10 @@ void draw_text(int, int);
 
 int main(){
 
-	const int FPS = 30;
+	int fps = 30;
 
 	char window_name[] = "Conway's Game of Life";
 	InitWindow(WIDTH, HEIGHT, window_name);
-	SetTargetFPS(FPS);
 	
 	const int columns = WIDTH/CELL_SIZE;
 	const int rows = HEIGHT/CELL_SIZE;
@@ -88,10 +87,20 @@ int main(){
 		}else{
 			// Here you can click to rise_cell;
 			DrawText("Paused",(WIDTH/2)-100,HEIGHT/2,50,WHITE);
+
+			if (IsKeyPressed(KEY_C)){
+				clear_grid(&grid,cells);	
+			}
+
+			if (IsKeyPressed(KEY_UP) && fps < 120)
+				fps++;
+			if(IsKeyPressed(KEY_DOWN) && fps > 30)
+				fps--;
 		}
 
 		count_alive_cells(&grid,cells,&population);	
 		
+		SetTargetFPS(fps);
 	}
 	
 	CloseWindow();
